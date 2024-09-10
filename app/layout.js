@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body>
 				<div>
-					<header className="bg-blue-600 p-4 text-white">
+					<header className="bg-primary p-4 text-white">
 						<nav className="container mx-auto flex justify-between">
 							<div className="text-xl font-bold">Health Software Solution</div>
 							<ul className="flex space-x-4">
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
 						</nav>
 					</header>
 					<main>{children}</main>
-					<footer className="bg-gray-800 p-4 text-white text-center">
+					<footer className="bg-secondary p-4 text-white text-center">
 						<p>&copy; 2024 Health Software Solution</p>
 					</footer>
 				</div>
