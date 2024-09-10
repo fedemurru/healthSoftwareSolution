@@ -5,11 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
 
 .bg-primary {
-	background-color: #0e7490; /* Replace with your primary color */
+	background-color: primary;
 }
 
 .transition-transform {
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 /* :root {
