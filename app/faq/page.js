@@ -31,7 +31,7 @@ export default function FAQ() {
 						{/* Image */}
 						<div className="lg:w-1/2 mb-6 lg:mb-0">
 							<Image
-								src="/faq.jpg" // Replace with your image
+								src="/faq.jpg"
 								alt="FAQ Illustration"
 								width={800}
 								height={400}
