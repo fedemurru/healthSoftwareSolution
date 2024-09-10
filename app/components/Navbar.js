@@ -4,6 +4,7 @@
 // components/Header.jsx
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,14 @@ export default function Header() {
 	};
 
 	return (
-		<header className="bg-primary p-4 text-white">
+		<header className="bg-primary text-white">
 			<nav className="container mx-auto flex items-center justify-between relative">
 				<Link href="/" passHref>
-					<div className="text-xl font-bold cursor-pointer">
-						Health Software Solution
+					<div className="flex items-center">
+						<Image src="/logo.webp" width={70} height={100} alt="Logo" />
+						<div className="text-lg font-bold cursor-pointer ml-2">
+							Health Software Solution
+						</div>
 					</div>
 				</Link>
 				<button
