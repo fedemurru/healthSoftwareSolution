@@ -86,6 +86,17 @@ export default function Header() {
 							</p>
 						</Link>
 					</li>
+					{/* Call to Action - Get Started */}
+					<li>
+						<Link href="/contact">
+							<p
+								onClick={handleLinkClick}
+								className="bg-blue-500 hidden md:block text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+							>
+								Get Started
+							</p>
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
