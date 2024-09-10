@@ -2,21 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Fetch project data from the API
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 async function getProjectData(id) {
-	const apiUrl = process.env.VERCEL_URL || "http://localhost:3000/api/case";
 	try {
-		const res = await fetch(`${apiUrl}/${id}`);
-		if (!res.ok) {
-			throw new Error("Failed to fetch data");
-		}
-		const data = await res.json();
-		return data || {};
+		const response = await fetch(`${apiUrl}/${id}`);
+		if (!response.ok) throw new Error("Network response was not ok");
+		const data = await response.json();
+		return data;
 	} catch (error) {
 		console.error("Error fetching project data:", error);
-		return {};
+		return null;
 	}
 }
-
 // ProjectDetail component
 export default async function ProjectDetail({ params }) {
 	const { id } = params;
@@ -24,13 +22,7 @@ export default async function ProjectDetail({ params }) {
 	const project = await getProjectData(id);
 
 	// Handle the case where project data is not found
-	if (
-		!project ||
-		!project.title ||
-		!project.description ||
-		!project.image ||
-		!project.content
-	) {
+	if (!project) {
 		return (
 			<p className="text-center text-red-500">
 				Project not found or invalid data.
