@@ -20,3 +20,28 @@ export const faqs = [
 			"Yes, we offer ongoing support and maintenance services to ensure that your software continues to perform well and meet your evolving needs.",
 	},
 ];
+
+export const caseStudies = [
+	{
+		title: "Project A",
+		description:
+			"An overview of Project A showcasing our expertise in React and Laravel.",
+		image: "/pexels.jpg",
+		link: "/project-a",
+	},
+	{
+		title: "Project B",
+		description:
+			"An in-depth look at Project B, highlighting our custom software solutions.",
+		image: "/pexels.jpg",
+		link: "/project-b",
+	},
+	{
+		title: "Project C",
+		description:
+			"A case study on Project C, illustrating our innovative approach to development.",
+		image: "/pexels.jpg",
+		link: "/project-c",
+	},
+	// Add more projects as needed
+];
