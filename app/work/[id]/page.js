@@ -6,7 +6,7 @@ const apiUrl = process.env.NEXT_PUBLIC_BASE_API_URL;
 
 async function getProjectData(id) {
 	try {
-		const response = await fetch(`${apiUrl}/${id}`);
+		const response = await fetch(`${apiUrl}/api/case/${id}`);
 		if (!response.ok) throw new Error("Network response was not ok");
 		const data = await response.json();
 		return data;
