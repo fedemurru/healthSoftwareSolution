@@ -64,28 +64,40 @@ export default function Header() {
 				>
 					<li>
 						<Link href="/" passHref>
-							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+							<p
+								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								onClick={handleLinkClick}
+							>
 								Home
 							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/about" passHref>
-							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+							<p
+								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								onClick={handleLinkClick}
+							>
 								About Us
 							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/services" passHref>
-							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+							<p
+								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								onClick={handleLinkClick}
+							>
 								Services
 							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/contact" passHref>
-							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+							<p
+								className="block p-2 md:p-0 hover:text-blue-500 transition-colors duration-300"
+								onClick={handleLinkClick}
+							>
 								Contact
 							</p>
 						</Link>
