@@ -51,8 +51,8 @@ export default function FAQ() {
 											{faq.question}
 										</button>
 										<div
-											className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
-												openIndex === index ? "max-h-[1000px] p-6" : "max-h-0"
+											className={`transition-height duration-300 ease-in-out overflow-hidden ${
+												openIndex === index ? "max-h-[1000px] p-5" : "max-h-0"
 											}`}
 											style={{
 												maxHeight: openIndex === index ? "1000px" : "0",
