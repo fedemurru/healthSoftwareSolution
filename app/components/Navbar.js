@@ -12,6 +12,10 @@ export default function Header() {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
+	const handleLinkClick = () => {
+		setIsMenuOpen(false);
+	};
+
 	return (
 		<header className="bg-primary p-4 text-white">
 			<nav className="container mx-auto flex items-center justify-between relative">
@@ -56,22 +60,30 @@ export default function Header() {
 				>
 					<li>
 						<Link href="/" passHref>
-							<p className="block p-2 md:p-0">Home</p>
+							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+								Home
+							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/about" passHref>
-							<p className="block p-2 md:p-0">About Us</p>
+							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+								About Us
+							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/services" passHref>
-							<p className="block p-2 md:p-0">Services</p>
+							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+								Services
+							</p>
 						</Link>
 					</li>
 					<li>
 						<Link href="/contact" passHref>
-							<p className="block p-2 md:p-0">Contact</p>
+							<p className="block p-2 md:p-0" onClick={handleLinkClick}>
+								Contact
+							</p>
 						</Link>
 					</li>
 				</ul>
