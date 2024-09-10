@@ -25,8 +25,18 @@ export default async function ProjectDetail({ params }) {
 	const project = await getProjectData(id);
 
 	// Handle the case where project data is not found
-	if (!project) {
-		return <p className="text-center text-red-500">Project not found</p>;
+	if (
+		!project ||
+		!project.title ||
+		!project.description ||
+		!project.image ||
+		!project.content
+	) {
+		return (
+			<p className="text-center text-red-500">
+				Project not found or invalid data.
+			</p>
+		);
 	}
 
 	return (
