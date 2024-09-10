@@ -24,7 +24,7 @@ export default async function ProjectDetail({ params }) {
 
 	// Handle the case where project data is not found
 	if (!project) {
-		return <p className="text-center text-red-500">Project not found.</p>;
+		return <p className="text-center text-red-500">Project not found</p>;
 	}
 
 	return (
