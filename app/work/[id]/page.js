@@ -3,8 +3,11 @@ import Link from "next/link";
 
 // Fetch project data from the API
 async function getProjectData(id) {
+	const apiUrl =
+		process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/case";
+
 	try {
-		const res = await fetch(`http://localhost:3000/api/case/${id}`);
+		const res = await fetch(`${apiUrl}/${id}`);
 		if (!res.ok) {
 			throw new Error("Failed to fetch data");
 		}
