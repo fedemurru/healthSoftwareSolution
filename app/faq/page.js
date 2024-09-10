@@ -27,7 +27,7 @@ export default function FAQ() {
 			<main className="container mx-auto">
 				{/* FAQ Section */}
 				<section className="mb-12">
-					<div className="flex flex-col lg:flex-row lg:space-x-8">
+					<div className="flex flex-col md:flex-row md:space-x-8">
 						{/* Image */}
 						<div className="lg:w-1/2 mb-6 lg:mb-0">
 							<Image
