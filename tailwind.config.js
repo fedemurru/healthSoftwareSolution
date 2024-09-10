@@ -12,6 +12,11 @@ module.exports = {
 				white: "#ffffff", // White
 				secondary: "#0E7490", // A darker cyan shade for accents
 				background: "#F8FAFC", // A light grayish background color
+				third: "#FC4C54", // red
+				dark: "#333333", // dark bg
+			},
+			fontFamily: {
+				roboto: ["Roboto", "sans-serif"],
 			},
 		},
 	},
