@@ -1,5 +1,12 @@
 // components/Footer.jsx
 import Link from "next/link";
+import {
+	faFacebook,
+	faXTwitter,
+	faLinkedin,
+	faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
 	return (
@@ -15,7 +22,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							className="hover:text-gray-300"
 						>
-							Facebook
+							<FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
 						</p>
 					</Link>
 					<Link href="https://twitter.com" passHref>
@@ -24,7 +31,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							className="hover:text-gray-300"
 						>
-							Twitter
+							<FontAwesomeIcon icon={faXTwitter} className="h-6 w-6" />
 						</p>
 					</Link>
 					<Link href="https://linkedin.com" passHref>
@@ -33,7 +40,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							className="hover:text-gray-300"
 						>
-							LinkedIn
+							<FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
 						</p>
 					</Link>
 					<Link href="https://instagram.com" passHref>
@@ -42,7 +49,7 @@ export default function Footer() {
 							rel="noopener noreferrer"
 							className="hover:text-gray-300"
 						>
-							Instagram
+							<FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
 						</p>
 					</Link>
 				</div>
