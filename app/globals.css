@@ -4,6 +4,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
 
+.bg-primary {
+	background-color: #0e7490; /* Replace with your primary color */
+}
+
+.transition-transform {
+	transition: transform 0.3s ease-in-out;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
