@@ -18,7 +18,7 @@ export default function HeroSection() {
 					{/* Buttons Container */}
 					<div className="flex items-center justify-center w-full space-x-4 lg:justify-start">
 						<a
-							href="#"
+							href="/about"
 							className="p-4 text-sm font-semibold text-white bg-primary rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600"
 						>
 							About us
@@ -27,7 +27,7 @@ export default function HeroSection() {
 				</div>
 
 				{/* Image */}
-				<div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+				<div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2 mb-3">
 					<Image
 						src="/pexels.jpg" // Ensure the path is correct
 						alt="Hero Illustration"
