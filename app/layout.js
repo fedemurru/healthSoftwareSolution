@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import Footer from "./components/footer";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -24,27 +26,29 @@ export default function RootLayout({ children }) {
 				<div>
 					<header className="bg-primary p-4 text-white">
 						<nav className="container mx-auto flex justify-between">
-							<div className="text-xl font-bold">Health Software Solution</div>
+							<Link href="/">
+								<div className="text-xl font-bold cursor-pointer">
+									Health Software Solution
+								</div>
+							</Link>
 							<ul className="flex space-x-4">
 								<li>
-									<a href="/">Home</a>
+									<Link href="/">Home</Link>
 								</li>
 								<li>
-									<a href="/about">About Us</a>
+									<Link href="/about">About Us</Link>
 								</li>
 								<li>
-									<a href="/services">Services</a>
+									<Link href="/services">Services</Link>
 								</li>
 								<li>
-									<a href="/contact">Contact</a>
+									<Link href="/contact">Contact</Link>
 								</li>
 							</ul>
 						</nav>
 					</header>
 					<main>{children}</main>
-					<footer className="bg-secondary p-4 text-white text-center">
-						<p>&copy; 2024 Health Software Solution</p>
-					</footer>
+					<Footer />
 				</div>
 			</body>
 		</html>
