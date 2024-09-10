@@ -6,7 +6,7 @@ import Link from "next/link";
 const apiUrl = process.env.NEXT_PUBLIC_BASE_API_URL;
 async function getData() {
 	try {
-		const response = await fetch(`${apiUrl}/api/case`);
+		const response = await fetch(`http://localhost:3000/api/case`);
 		const data = await response.json();
 		return data;
 		//console.log(caseStudies);
