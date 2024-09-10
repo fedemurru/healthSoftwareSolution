@@ -50,11 +50,19 @@ export default function FAQ() {
 										>
 											{faq.question}
 										</button>
-										{openIndex === index && (
-											<div className="p-6 text-gray-700">
-												<p dangerouslySetInnerHTML={{ __html: faq.answer }} />
-											</div>
-										)}
+										<div
+											className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+												openIndex === index ? "max-h-[1000px] p-6" : "max-h-0"
+											}`}
+											style={{
+												maxHeight: openIndex === index ? "1000px" : "0",
+											}}
+										>
+											<p
+												dangerouslySetInnerHTML={{ __html: faq.answer }}
+												className="text-gray-700"
+											/>
+										</div>
 									</div>
 								))}
 							</div>
