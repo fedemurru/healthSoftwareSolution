@@ -3,9 +3,7 @@ import Link from "next/link";
 
 // Fetch project data from the API
 async function getProjectData(id) {
-	const apiUrl =
-		process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/case";
-
+	const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 	try {
 		const res = await fetch(`${apiUrl}/${id}`);
 		if (!res.ok) {
@@ -14,7 +12,7 @@ async function getProjectData(id) {
 		const data = await res.json();
 		return data;
 	} catch (error) {
-		console.error(error);
+		console.error("Error fetching project data:", error);
 		return null;
 	}
 }
