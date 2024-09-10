@@ -2,10 +2,20 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import { caseStudies } from "../constants";
 
-const workPage = () => {
-	console.log(caseStudies);
+async function getData() {
+	try {
+		const response = await fetch(`http://localhost:3000/api/case`);
+		const data = await response.json();
+		return data;
+		console.log(caseStudies);
+	} catch (error) {
+		console.log(error, "error while fetching data");
+	}
+}
+
+async function workPage() {
+	const caseStudies = await getData();
 	return (
 		<div className="bg-gray-50 min-h-screen p-6">
 			<header className="bg-primary text-white py-6 mb-12">
@@ -52,6 +62,6 @@ const workPage = () => {
 			</main>
 		</div>
 	);
-};
+}
 
 export default workPage;
