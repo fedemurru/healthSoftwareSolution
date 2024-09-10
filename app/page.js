@@ -11,7 +11,7 @@ export default function Home() {
 					Welcome to Health Software Solution
 				</h1>
 				<p className="mt-4 text-lg">
-					We offer innovative software solutions for the healthcare industry.
+					We offerss innovative software solutions for the healthcare industry.
 				</p>
 			</main>
 		</div>
