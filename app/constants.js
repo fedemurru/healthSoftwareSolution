@@ -23,6 +23,7 @@ export const faqs = [
 
 export const caseStudies = [
 	{
+		id: 1,
 		title: "Project A",
 		description:
 			"An overview of Project A showcasing our expertise in React and Laravel.",
@@ -30,6 +31,7 @@ export const caseStudies = [
 		link: "/project-a",
 	},
 	{
+		id: 2,
 		title: "Project B",
 		description:
 			"An in-depth look at Project B, highlighting our custom software solutions.",
@@ -37,6 +39,7 @@ export const caseStudies = [
 		link: "/project-b",
 	},
 	{
+		id: 3,
 		title: "Project C",
 		description:
 			"A case study on Project C, illustrating our innovative approach to development.",

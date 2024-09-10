@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import { caseStudies } from "../constants";
 import Link from "next/link";
+import { caseStudies } from "../constants";
 
 const workPage = () => {
+	console.log(caseStudies);
 	return (
 		<div className="bg-gray-50 min-h-screen p-6">
 			<header className="bg-primary text-white py-6 mb-12">
@@ -18,6 +19,7 @@ const workPage = () => {
 
 			<main className="container mx-auto">
 				{/* Case Studies Section */}
+
 				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{caseStudies.map((caseStudy, index) => (
 						<div
@@ -38,7 +40,7 @@ const workPage = () => {
 									{caseStudy.title}
 								</h2>
 								<p className="text-gray-700 mb-4">{caseStudy.description}</p>
-								<Link href={caseStudy.link}>
+								<Link href={`/work/${caseStudy.id}`}>
 									<p className="text-primary font-semibold hover:underline">
 										Read More
 									</p>
