@@ -9,9 +9,10 @@ async function getData() {
 		const response = await fetch(`${apiUrl}/api/case`);
 		const data = await response.json();
 		return data;
-		console.log(caseStudies);
+		//console.log(caseStudies);
 	} catch (error) {
 		console.log(error, "error while fetching data");
+		return [];
 	}
 }
 
