@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 				<p className="mt-4 text-lg font-roboto">
 					We offers innovative software solutions for the healthcare industry.
 				</p>
+				<HeroSection />
 			</main>
 		</div>
 	);
