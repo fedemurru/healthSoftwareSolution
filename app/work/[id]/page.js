@@ -11,10 +11,10 @@ async function getProjectData(id) {
 			throw new Error("Failed to fetch data");
 		}
 		const data = await res.json();
-		return data;
+		return data || {};
 	} catch (error) {
 		console.error("Error fetching project data:", error);
-		return null;
+		return {};
 	}
 }
 
