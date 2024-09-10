@@ -4,7 +4,7 @@ import Link from "next/link";
 // Fetch project data from the API
 async function getProjectData(id) {
 	try {
-		const res = await fetch(`http://localhost:3000/api/case/${id}`); // Replace with your API endpoint
+		const res = await fetch(`http://localhost:3000/api/case/${id}`);
 		if (!res.ok) {
 			throw new Error("Failed to fetch data");
 		}
@@ -19,6 +19,7 @@ async function getProjectData(id) {
 // ProjectDetail component
 export default async function ProjectDetail({ params }) {
 	const { id } = params;
+	//Get params
 	const project = await getProjectData(id);
 
 	// Handle the case where project data is not found
