@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { BASE_API_URL } from "../constants";
 
-const apiUrl = process.env.NEXT_PUBLIC_BASE_API_URL;
+const apiUrl = BASE_API_URL;
+
 async function getData() {
 	try {
 		const response = await fetch(`${apiUrl}/api/case`);
