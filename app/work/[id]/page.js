@@ -22,6 +22,10 @@ export default async function ProjectDetail({ params }) {
 	//Get params
 	const project = await getProjectData(id);
 
+	if (!apiUrl) {
+		return null;
+	}
+
 	// Handle the case where project data is not found
 	if (!project) {
 		return (
