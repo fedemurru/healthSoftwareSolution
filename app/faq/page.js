@@ -13,6 +13,8 @@ export default function FAQ() {
 		setOpenIndex(openIndex === index ? null : index);
 	};
 
+	//console.log(faqs);
+
 	return (
 		<div className="bg-gray-50 min-h-screen p-6">
 			<header className="bg-primary text-white py-6 mb-12">
